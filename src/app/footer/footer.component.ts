@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import {MatPaginatorModule} from '@angular/material/paginator';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MatPaginatorModule],
+  imports: [],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

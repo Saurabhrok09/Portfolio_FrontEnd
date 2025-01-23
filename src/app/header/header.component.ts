@@ -8,26 +8,9 @@ import { BreakpointObserver } from '@angular/cdk/layout';
   selector: 'app-header',
   standalone: true,
   imports: [MatToolbarModule, MatButtonModule, MatIconModule],
-  templateUrl: './header.component.html',
+  templateUrl: './header.component.html', 
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  constructor(private observer: BreakpointObserver) {}
-  title = 'material-responsive-sidenav';
-  @ViewChild(MatSidenav)
-  sidenav!: MatSidenav;
-  isMobile= true;
-
-
- 
-
-  ngOnInit() {
-    this.observer.observe(['(max-width: 800px)']).subscribe((screenSize) => {
-      if(screenSize.matches){
-        this.isMobile = true;
-      } else {
-        this.isMobile = false;
-      }
-    });
-  }
+  
 }
